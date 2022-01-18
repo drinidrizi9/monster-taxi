@@ -12,6 +12,7 @@
     box-sizing: border-box;
     text-decoration: none;
     color: var(--baseColor2);
+    font-family: 'Montserrat', sans-serif;
 }
 
 ::-webkit-scrollbar{
@@ -81,7 +82,7 @@ img{
 }
 
 .inner-menu-text{
-    font-family: 'Gotham';
+    font-family: 'Montserrat', sans-serif;
     font-size: 35px;
 }
 
@@ -109,7 +110,7 @@ img{
 .link{
     color: var(--baseColor2);
     font-size: 28px;
-    font-family: 'Gotham';
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     display: block;
     margin: 25px 0px 25px 0px;
@@ -165,7 +166,7 @@ img{
 
 .number{
     color: #fff;
-    font-family: 'Gotham';
+    font-family: 'Montserrat', sans-serif;
     font-size: 13vw;
     margin-bottom: -25px;
 }
@@ -189,7 +190,7 @@ img{
 
 .paragraphs{
     width: 80%;
-    font-family: 'Gotham';
+    font-family: 'Montserrat', sans-serif;
     margin-left: 0px;
     margin-top: 0px;
 }
@@ -249,7 +250,7 @@ img{
     position: absolute;
     text-align: center;
     font-size: 22px;
-    font-family: 'Gotham';
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
     margin-top: 20px;
     font-weight: 300;
@@ -270,7 +271,7 @@ img{
     border-radius: 100px;
     font-size: 20px;
     font-weight: 500;
-    font-family: 'Gotham';
+    font-family: 'Montserrat', sans-serif;
 }
 
 .google-play-store-image{
@@ -308,7 +309,7 @@ img{
     .links2{
         display: block;
         font-size: 24px;
-        font-family: 'Gotham';
+        font-family: 'Montserrat', sans-serif;
         font-weight: 500;
     }
 
