@@ -1,0 +1,381 @@
+:root{
+    --baseColor1: #fbc73e;
+    --baseColor2: #292929;
+
+    --animation-open: translateY(0vh);
+    --animation-close: translateY(-100vh);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--baseColor2);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.links2{
+    display: none;
+}
+
+.header{
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100px;
+    background-color: var(--baseColor1);
+    justify-content: center;
+    flex-direction: row;
+    z-index: 1000;
+}
+
+.container1{
+    display: flex;
+    width: 80vw;
+    height: 100px;
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+img{
+    width: 50px;
+}
+
+.logo-img{
+    width: 80px;
+    display: block;
+}
+
+#menu{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(360deg, rgba(251, 199, 62, 0.06) -89.74%, #FBC73E 73.32%, #FBC73E 100%);
+    left: 0;
+    top: 0;
+    transform: translateY(-100vh);
+    transition: 0.5s ease-in-out;
+    z-index: 10000;
+}
+
+.inner-menu{
+    width: 80vw;
+    height: 100vh;
+    position: absolute;
+    justify-content: center;
+}
+
+.inner-inner-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.inner-menu-text{
+    font-family: 'Gotham';
+    font-size: 35px;
+}
+
+#burger-open{
+    width: 40px;
+}
+
+#burger-open:hover{
+    cursor: pointer;
+}
+
+#burger-close{
+    width: 35px;
+    height: 35px;
+    position: relative;
+}
+#burger-close:hover{
+    cursor: pointer;
+}
+
+.links{
+    margin-top: 100px;
+}
+
+.link{
+    color: var(--baseColor2);
+    font-size: 28px;
+    font-family: 'Gotham';
+    font-weight: 500;
+    display: block;
+    margin: 25px 0px 25px 0px;
+    position: relative;
+}
+.link::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    background-color: var(--baseColor2);
+    transition: 0.2s ease-in-out;
+}
+.link:hover::after{
+    width: 40px;
+}
+
+.content{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    overflow-x: hidden;
+    margin-top: 79px;
+}
+
+.background{
+    background-image: url(../images/pexels-tatiana-fet-1105766.jpg);
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    margin-top: -300px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: -1;
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 85%);
+    filter: blur(1px);
+}
+
+.container2{
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    height: 40vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.number{
+    color: #fff;
+    font-family: 'Gotham';
+    font-size: 13vw;
+    margin-bottom: -25px;
+}
+
+.car1{
+    width: 60%;
+}
+
+.part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--baseColor1);
+    position: initial;
+    width: 100vw;
+    height: 85vh;
+    z-index: 20;
+    margin-top: 330px;
+}
+
+.paragraphs{
+    width: 80%;
+    font-family: 'Gotham';
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.paragraph1{
+    font-weight: 700;
+    font-size: 22px;
+    color: #292929;
+}
+
+.paragraph2{
+    font-weight: 700;
+    font-size: 26px;
+    color: #181818;
+}
+
+.paragraph3{
+    font-weight: 400;
+    font-size: 21px;
+    color: #292929;
+    margin-top: 15px;
+}
+
+.download{
+    margin-top: 120px;
+}
+
+.container3{
+    display: flex;
+    justify-content: center;
+}
+
+.background2{
+    position: absolute;
+    width: 300px;
+    z-index: 5;
+    backdrop-filter: blur(5px);
+}
+
+.circle1{
+    width: 100px;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 290px;
+}
+
+.circle2{
+    width: 100px;
+    position: absolute;
+    margin-top: 110px;
+    margin-right: 260px;
+    z-index: 4;
+}
+
+.paragraph4{
+    z-index: 10;
+    position: absolute;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Gotham';
+    color: #fff;
+    margin-top: 20px;
+    font-weight: 300;
+}
+.span1{
+    font-weight: 600;
+    color: #fff;
+    font-size: 27px;
+}
+
+.download-btn{
+    position: absolute;
+    z-index: 10;
+    margin-top: 90px;
+    color: #fff;
+    padding: 10px 40px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Gotham';
+}
+
+.google-play-store-image{
+    z-index: 10;
+    width: 120px;
+    margin-top: 95px;
+}
+
+@media only screen and (min-width: 678px) {
+
+    .background{
+        margin-top: -220px;
+    }
+
+    .container2{
+        margin-top: 120px;
+    }
+
+    .part2{
+        margin-top: 400px;
+    }
+
+}
+
+@media only screen and (min-width: 1025px) {
+
+    #burger-open {
+        display: none;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    .links2{
+        display: block;
+        font-size: 24px;
+        font-family: 'Gotham';
+        font-weight: 500;
+    }
+
+    .home-btn{
+        margin-right: 15px;
+        position: relative;
+        font-weight: 700;
+    }
+
+    .about-btn{
+        margin-right: 15px;
+        margin-left: 15px;
+        position: relative;
+        font-weight: 400;
+    }
+
+    .contact-btn{
+        margin-right: 15px;
+        margin-left: 15px;
+        position: relative;
+        font-weight: 400;
+    }
+    
+    .download2-btn{
+        margin-left: 15px;
+        position: relative;
+        font-weight: 400;
+    }
+
+    .number{
+        font-size: 110px;
+    }
+
+    .container2{
+        margin-top: 190px;
+    }
+
+    .car1{
+        width: 500px;
+    }
+
+    .paragraph1{
+        font-size: 30px;
+    }
+
+    .paragraph2{
+        font-size: 36px;
+    }
+
+    .paragraph3{
+        font-size: 24px;
+    }
+
+    .background{
+        margin-top: -120px;
+    }
+
+    .part2{
+        margin-top: 500px;
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+    .background{
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+    }
+}

@@ -1,0 +1,518 @@
+:root{
+    --baseColor1: #fbc73e;
+    --baseColor2: #292929;
+
+    --animation-open: translateY(0vh);
+    --animation-close: translateY(-100vh);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--baseColor2);
+    font-family: 'Gotham';
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.links2{
+    display: none;
+}
+
+.header{
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100px;
+    background-color: var(--baseColor2);
+    justify-content: center;
+    flex-direction: row;
+    z-index: 1000;
+}
+
+.container1{
+    display: flex;
+    width: 80vw;
+    height: 100px;
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+img{
+    width: 50px;
+}
+
+.logo-img{
+    width: 80px;
+    display: block;
+}
+
+#menu{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(360deg, rgba(251, 199, 62, 0.06) -89.74%, #FBC73E 73.32%, #FBC73E 100%);
+    left: 0;
+    top: 0;
+    transform: translateY(-100vh);
+    transition: 0.5s ease-in-out;
+    z-index: 10000;
+}
+
+.inner-menu{
+    width: 80vw;
+    height: 100vh;
+    position: absolute;
+    justify-content: center;
+}
+
+.inner-inner-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.inner-menu-text{
+    font-family: 'Gotham';
+    font-size: 35px;
+}
+
+#burger-open{
+    width: 40px;
+    height: 30px;
+}
+
+#burger-open:hover{
+    cursor: pointer;
+}
+
+#burger-close{
+    width: 35px;
+    height: 35px;
+    position: relative;
+}
+#burger-close:hover{
+    cursor: pointer;
+}
+
+.links{
+    margin-top: 100px;
+}
+
+.link{
+    color: var(--baseColor2);
+    font-size: 28px;
+    font-family: 'Gotham';
+    font-weight: 500;
+    display: block;
+    margin: 25px 0px 25px 0px;
+    position: relative;
+}
+.link::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    background-color: var(--baseColor2);
+    transition: 0.2s ease-in-out;
+}
+.link:hover::after{
+    width: 40px;
+}
+
+.content{
+    display: flex;
+    width: 100vw;
+    height: 190vh;
+    background-color: var(--baseColor1);
+    justify-content: center;
+}
+
+.background{
+    width: 80vw;
+    height: calc(190vh - 100px);
+    position: absolute;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bg{
+    position: relative;
+    width: 250px;
+    backdrop-filter: blur(5px);
+    z-index: 100;
+}
+
+.rectangle{
+    width: 100px;
+}
+
+.group{
+    margin: 20px 0px;
+}
+
+.rectangle2{
+    position: absolute;
+    right: 10%;
+    top: 150px;
+    z-index: 5;
+    width: 100px;
+}
+
+.rectangle1{
+    position: absolute;
+    left: 11%;
+    top: 480px;
+    z-index: 5;
+    width: 90px;
+}
+
+.paragraph1{
+    position: absolute;
+    z-index: 101;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #292929;
+}
+
+.paragraph2{
+    max-width: 200px;
+    position: absolute;
+    z-index: 101;
+    margin-left: 30px;
+    margin-top: 120px;
+    font-size: 23px;
+    font-weight: 400;
+    color: #292929;
+}
+
+.about-us-text{
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+.circle{
+    width: 100px;
+}
+
+.circle1{
+    position: absolute;
+    right: 10%;
+    z-index: 5;
+    top: 650px;
+}
+
+.circle2{
+    z-index: 5;
+    position: absolute;
+    left: 10%;
+    bottom: 590px;
+}
+
+.paragraph3{
+    position: absolute;
+    z-index: 101;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 30px 0px 0px 30px;
+}
+
+.paragraph4{
+    position: absolute;
+    z-index: 101;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 90px 0px 0px 30px;
+    max-width: 200px;
+}
+
+.triangle{
+    width: 100px;
+}
+
+.triangle1{
+    position: absolute;
+    bottom: 90px;
+    left: 11%;
+}
+
+.triangle2{
+    position: absolute;
+    right: 10%;
+    bottom: 410px;
+}
+
+.paragraph5{
+    position: absolute;
+    z-index: 101;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 30px 0px 0px 30px;
+}
+
+.paragraph6{
+    position: absolute;
+    z-index: 101;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 90px 0px 0px 30px;
+    max-width: 200px;
+}
+
+@media only screen and (min-width: 640px) {
+
+    .rectangle1{
+        left: 20%;
+    }
+    .rectangle2{
+        right: 18%;
+    }
+
+    .circle1{
+        right: 18%;
+    }
+    .circle2{
+        left: 18%;
+    }
+
+    .triangle1{
+        left: 20%;
+    }
+    .triangle2{
+        right: 19%;
+    }
+
+}
+
+@media only screen and (min-width: 800px) {
+
+    .rectangle1{
+        left: 25%;
+    }
+    .rectangle2{
+        right: 25%;
+    }
+
+    .circle1{
+        right: 26%;
+    }
+    .circle2{
+        left: 26%;
+    }
+
+    .triangle1{
+        left: 25%;
+    }
+    .triangle2{
+        right: 25%;
+    }
+    
+    #menu{
+        display: none;
+    }
+    #burger-open{
+        display: none;
+    }
+
+    .links2{
+        display: block;
+        font-size: 24px;
+        font-family: 'Gotham';
+        font-weight: 500;
+    }
+
+    .home-btn{
+        margin-right: 15px;
+        position: relative;
+        font-weight: 400;
+        color: var(--baseColor1);
+    }
+
+    .about-btn{
+        margin-right: 15px;
+        margin-left: 15px;
+        position: relative;
+        font-weight: 700;
+        color: var(--baseColor1);
+    }
+
+    .contact-btn{
+        margin-right: 15px;
+        margin-left: 15px;
+        position: relative;
+        font-weight: 400;
+        color: var(--baseColor1);
+    }
+    
+    .download2-btn{
+        margin-left: 15px;
+        color: var(--baseColor1);
+        position: relative;
+        font-weight: 400;
+    }
+
+}
+
+@media only screen and (min-width: 1040px) {
+    .rectangle1{
+        position: absolute;
+        display: inline-block;
+        left: 32%;
+        top: 480px;
+    }
+    .rectangle2{
+        display: inline-block;
+        position: absolute;
+        left: 57%;
+        top: 140px;
+    }
+
+    .circle1{
+        position: absolute;
+        left: 33%;
+        top: 960px;
+        display: inline-block;
+    }
+    .circle2{
+        position: absolute;
+        left: 57%;
+        top: 640px;
+        display: inline-block;
+    }
+
+    .triangle1{
+        position: absolute;
+        left: 32%;
+        top: 1460px;
+        display: inline-block;
+    }
+    .triangle2{
+        position: absolute;
+        left: 57%;
+        top: 1150px;
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 1290px) {
+
+    .rectangle1{
+        position: absolute;
+        display: inline-block;
+        left: 37%;
+        top: 480px;
+    }
+    .rectangle2{
+        display: inline-block;
+        position: absolute;
+        left: 57%;
+        top: 140px;
+    }
+
+    .circle1{
+        position: absolute;
+        left: 37%;
+        top: 960px;
+        display: inline-block;
+    }
+    .circle2{
+        position: absolute;
+        left: 57%;
+        top: 640px;
+        display: inline-block;
+    }
+
+    .triangle1{
+        position: absolute;
+        left: 37%;
+        top: 1460px;
+        display: inline-block;
+    }
+    .triangle2{
+        position: absolute;
+        left: 57%;
+        top: 1150px;
+        display: inline-block;
+    }
+    
+}
+
+@media only screen and (min-width: 1660px) {
+
+    .rectangle1{
+        position: absolute;
+        display: inline-block;
+        left: 60px;
+        top: 580px;
+    }
+    .rectangle2{
+        display: inline-block;
+        position: absolute;
+        left: 300px;
+        top: 250px;
+    }
+
+    .circle1{
+        position: absolute;
+        left: 430px;
+        top: 580px;
+        display: inline-block;
+    }
+    .circle2{
+        position: absolute;
+        left: 650px;
+        top: 250px;
+        display: inline-block;
+    }
+
+    .triangle1{
+        position: absolute;
+        left: 780px;
+        top: 580px;
+        display: inline-block;
+    }
+    .triangle2{
+        position: absolute;
+        left: 1000px;
+        top: 250px;
+        display: inline-block;
+    }
+
+    .background{
+        width: 70vw;
+        height: calc(100vh - 100px);
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .content{
+        height: 100vh;
+    }
+
+    .about-us-text{
+        display: block;
+        position: absolute;
+        top: 150px;
+    }
+
+    .group{
+        margin: 100px 0px 0px 0px;
+    }
+
+}
