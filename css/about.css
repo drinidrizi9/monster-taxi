@@ -516,3 +516,46 @@ img{
     }
 
 }
+
+@media only screen and (min-width: 1919px) {
+
+    .rectangle1{
+        position: absolute;
+        display: inline-block;
+        left: 100px;
+        top: 580px;
+    }
+    .rectangle2{
+        display: inline-block;
+        position: absolute;
+        left: 340px;
+        top: 250px;
+    }
+
+    .circle1{
+        position: absolute;
+        left: 490px;
+        top: 580px;
+        display: inline-block;
+    }
+    .circle2{
+        position: absolute;
+        left: 680px;
+        top: 250px;
+        display: inline-block;
+    }
+
+    .triangle1{
+        position: absolute;
+        left: 900px;
+        top: 580px;
+        display: inline-block;
+    }
+    .triangle2{
+        position: absolute;
+        left: 1130px;
+        top: 250px;
+        display: inline-block;
+    }
+
+}
