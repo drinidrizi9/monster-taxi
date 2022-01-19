@@ -279,7 +279,7 @@ img{
     margin-top: 95px;
 }
 
-@media only screen and (min-width: 678px) {
+/* @media only screen and (min-width: 678px) {
 
     .background{
         background-image: url(../images/pexels-tatiana-fet-1105766.jpg);
@@ -388,4 +388,4 @@ img{
         height: 100vh;
         background-size: cover;
     }
-}
+} */
