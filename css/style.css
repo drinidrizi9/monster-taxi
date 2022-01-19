@@ -27,7 +27,7 @@
     display: flex;
     position: fixed;
     width: 100vw;
-    height: 100px;
+    height: 80px;
     background-color: var(--baseColor1);
     justify-content: center;
     flex-direction: row;
@@ -37,7 +37,7 @@
 .container1{
     display: flex;
     width: 80vw;
-    height: 100px;
+    height: 80px;
     background-color: transparent;
     justify-content: space-between;
     align-items: center;
@@ -45,11 +45,11 @@
 }
 
 img{
-    width: 50px;
+    width: 40px;
 }
 
 .logo-img{
-    width: 80px;
+    width: 60px;
     display: block;
 }
 
@@ -59,7 +59,7 @@ img{
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(360deg, rgba(251, 199, 62, 0.06) -89.74%, #FBC73E 73.32%, #FBC73E 100%);
+    background: linear-gradient(360deg, rgba(251, 197, 62, 0) -100%, #FBC73E 30%, #FBC73E 0%);
     left: 0;
     top: 0;
     transform: translateY(-100vh);
@@ -83,11 +83,11 @@ img{
 
 .inner-menu-text{
     font-family: 'Montserrat', sans-serif;
-    font-size: 35px;
+    font-size: 28px;
 }
 
 #burger-open{
-    width: 40px;
+    width: 30px;
 }
 
 #burger-open:hover{
@@ -95,8 +95,8 @@ img{
 }
 
 #burger-close{
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     position: relative;
 }
 #burger-close:hover{
@@ -109,7 +109,7 @@ img{
 
 .link{
     color: var(--baseColor2);
-    font-size: 28px;
+    font-size: 24px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     display: block;
@@ -140,7 +140,7 @@ img{
 .background{
     background-image: url(../images/pexels-tatiana-fet-1105766.jpg);
     width: 100vw;
-    height: 400px;
+    height: 300px;
     display: inline;
     position: absolute;
     background-repeat: no-repeat;
@@ -160,7 +160,7 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 .number{
@@ -182,39 +182,39 @@ img{
     background-color: var(--baseColor1);
     position: initial;
     width: 100vw;
-    height: 85vh;
+    height: 87vh;
     z-index: 20;
-    margin-top: 330px;
+    margin-top: 215px;
 }
 
 .paragraphs{
     width: 80%;
     font-family: 'Montserrat', sans-serif;
     margin-left: 0px;
-    margin-top: 0px;
+    margin-top: -100px;
 }
 
 .paragraph1{
     font-weight: 700;
-    font-size: 22px;
+    font-size: 18px;
     color: #292929;
 }
 
 .paragraph2{
     font-weight: 700;
-    font-size: 26px;
+    font-size: 22px;
     color: #181818;
 }
 
 .paragraph3{
     font-weight: 400;
-    font-size: 21px;
+    font-size: 18px;
     color: #292929;
     margin-top: 15px;
 }
 
 .download{
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 .container3{
@@ -224,23 +224,23 @@ img{
 
 .background2{
     position: absolute;
-    width: 300px;
+    width: 220px;
     z-index: 5;
     backdrop-filter: blur(5px);
 }
 
 .circle1{
-    width: 100px;
+    width: 70px;
     position: absolute;
-    margin-top: -30px;
-    margin-left: 290px;
+    margin-top: -25px;
+    margin-left: 190px;
 }
 
 .circle2{
-    width: 100px;
+    width: 70px;
     position: absolute;
-    margin-top: 110px;
-    margin-right: 260px;
+    margin-top: 90px;
+    margin-right: 200px;
     z-index: 4;
 }
 
@@ -248,7 +248,7 @@ img{
     z-index: 10;
     position: absolute;
     text-align: center;
-    font-size: 22px;
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     margin-top: 20px;
@@ -257,18 +257,18 @@ img{
 .span1{
     font-weight: 600;
     color: #fff;
-    font-size: 27px;
+    font-size: 18px;
 }
 
 .download-btn{
     position: absolute;
     z-index: 10;
-    margin-top: 90px;
+    margin-top: 70px;
     color: #fff;
-    padding: 10px 40px;
+    padding: 10px 30px;
     border: 1px solid #fff;
     border-radius: 100px;
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
 }
